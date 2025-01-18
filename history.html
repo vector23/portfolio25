@@ -2,7 +2,7 @@
 <html>
     <head>
         <title>PORTFOLIO | Juraj Kebis</title>
-        <link rel="stylesheet" href="main.css?v=<?php echo time(); ?>" type="text/css"> 
+        <link rel="stylesheet" href="main.css" type="text/css"> 
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -12,21 +12,21 @@
         <!--    Hlavicka    -->
         <header>
             <div id="topBar">
-                <a href="index.php"><div class="menuT">About me
+                <a href="index.html"><div class="menuT">About me
                     </div></a>
                 <div class="menuT" id="hoverProjects">Projects
                     </div>
                 <!--Pod menu bar-->
                 <div id="podMenu">
-                        <a href="dari.php"><div class="podMT" id="dariCo">Dari Beary
+                        <a href="dari.html"><div class="podMT" id="dariCo">Dari Beary
                             </div></a>
-                        <a href="fpv.php"><div class="podMT" id="fpvCo">FPV App
+                        <a href="fpv.html"><div class="podMT" id="fpvCo">FPV App
                         </div></a>
-                        <a href="history.php"><div class="podMT" id="histCo">HISTORY PEXESO
+                        <a href="history.html"><div class="podMT" id="histCo">HISTORY PEXESO
                         </div></a>
-                        <a href="naturae.php"><div class="podMT" id="natuCo">Naturae Slovakia
+                        <a href="naturae.html"><div class="podMT" id="natuCo">Naturae Slovakia
                         </div></a>
-                        <a href="tower.php">
+                        <a href="tower.html">
                         <div class="podMT" id="secretCo">Secret Tower
                         </div></a>
                     <a href=""><div class="podMT">Research projects
@@ -34,59 +34,60 @@
                     </div>
                 <div class="menuT">Blogs
                     </div>
-                <a href="contact.php"><div class="menuT">Contact
+                <a href="contact.html"><div class="menuT">Contact
                     </div></a>
             </div>
             
             
         </header>
+
         
         <!--    Prva cast - welcome text  -->
-        <div class="apka_main_bar nat_color1">
+        <div class="apka_main_bar his_color1">
             <img src="imgs/pattern3.png" id="pattern_bck" draggable="false" style="position: relative;">
-            <div id="nazov_apky">Naturae Slovakia</div>
-            <div id="popis_apky"><span style="font-family: semiFont;">iOS App - AR Experience</span><br>Developer: <span style="font-family: semiFont;">&nbsp Juraj Kebis</span><br>Status: <span style="font-family: semiFont;">&nbsp Finished - Not available</span><br><br>Project development duration: <span style="font-family: semiFont;">&nbsp 2 months</span><br>Start of the development: <span style="font-family: semiFont;">&nbsp March 2021</span></div>
+            <div id="nazov_apky">HISTORY-PEXESO</div>
+            <div id="popis_apky" style="color: white;opacity: 0.8;"><span style="font-family: semiFont;">Cross platform - Educational game</span><br>Dev. team:<span style="font-family: semiFont;">&nbsp HKK Team</span><br>Scrum + Graphic designer: <span style="font-family: semiFont;">&nbsp Juraj Kebis</span><br>Programmer: <span style="font-family: semiFont;">&nbsp Martin Kubovčík</span><br>Card designer: <span style="font-family: semiFont;">&nbsp Peter Herbanský</span><br>Status: <span style="font-family: semiFont;">&nbsp Finished - <a href="https://gportal.fpvucm.sk/Hry/hrat/history-pexeso" target="_blank" rel="noreferrer noopener" style="color: black;">web version</a></span><br><br>Project development duration: <span style="font-family: semiFont;">&nbsp 5 months</span><br>Start of the development: <span style="font-family: semiFont;">&nbsp September 2020</span></div>
             
-                <img src="imgs/nat/logo_Natu.png" alt="logo" class="apka_picture" style="border-radius: 56px;">
-            
+                <img src="imgs/his/logo_Hist.png" alt="logo" class="apka_picture" style="border-radius: 50%; box-shadow: none;">
             <!--VIDEO PLAYER -->
             <script>
-                window.document.onkeydown = function(e) {
-                if (!e) {
-                    e = event;
-                }
-                if (e.keyCode == 27) {
-                    lightbox_close();
-                }
-                }
+                        window.document.onkeydown = function(e) {
+                        if (!e) {
+                            e = event;
+                        }
+                        if (e.keyCode == 27) {
+                            lightbox_close();
+                        }
+                        }
 
-                function lightbox_open() {
-                var lightBoxVideo = document.getElementById("videoPreview");
-                window.scrollTo(0, 0);
-                document.getElementById('light').style.display = 'block';
-                document.getElementById('fade').style.display = 'block';
-                lightBoxVideo.play();
-                }
+                        function lightbox_open() {
+                        var lightBoxVideo = document.getElementById("videoPreview");
+                        window.scrollTo(0, 0);
+                        document.getElementById('light').style.display = 'block';
+                        document.getElementById('fade').style.display = 'block';
+                        lightBoxVideo.play();
+                        }
 
-                function lightbox_close() {
-                var lightBoxVideo = document.getElementById("videoPreview");
-                document.getElementById('light').style.display = 'none';
-                document.getElementById('fade').style.display = 'none';
-                lightBoxVideo.pause();
-                }
-            </script>
-            <div id="light">
-                <a class="boxclose" id="boxclose" onclick="lightbox_close();"></a>
-                <video id="videoPreview" style="height:90vh;width:auto;"controls>
-                    <source src="imgs/nat/ar_preview.m4v" type="video/mp4">
-                    </video>
-                </div>
-                <div id="fade" onClick="lightbox_close();"></div>
-                <div>
-                <a href="#" onclick="lightbox_open();">Watch video</a>
-                <button type="button" class="button_sekcia svetla_i_tema_button speci_button" onclick=lightbox_open()>Play the preview</button>
-            </div>
-            <!--/VIDEO PLAYER -->
+                        function lightbox_close() {
+                        var lightBoxVideo = document.getElementById("videoPreview");
+                        document.getElementById('light').style.display = 'none';
+                        document.getElementById('fade').style.display = 'none';
+                        lightBoxVideo.pause();
+                        }
+                    </script>
+                    <div id="light">
+                        <a class="boxclose" id="boxclose" onclick="lightbox_close();"></a>
+                        <video id="videoPreview" style="height:90vh;width:auto;"controls>
+                            <source src="imgs/his/his_preview.mov" type="video/mp4">
+                            </video>
+                        </div>
+                        <div id="fade" onClick="lightbox_close();"></div>
+                        <div>
+                        <a href="#" onclick="lightbox_open();">Watch video</a>
+                        <button type="button" class="button_sekcia svetla_i_tema_button speci_button" onclick=lightbox_open()>Play the preview</button>
+                    </div>
+                    <!--/VIDEO PLAYER -->
+            
             <button type="button" id="sekcia_sipka" onclick="scrollSmooth();"><img src="imgs/sipka.png" id="sipka"></button>
             <script>
                 function scrollSmooth() {
@@ -98,7 +99,7 @@
             </script>
         </div>
         <!--    Druha cast - about me   -->
-        <div id="apka_preview_bar" class="nat_color2">
+        <div id="apka_preview_bar" class="his_color2">
             <div class="lava_strana_parag_text">
                 <div class="nazov_sekcia" style="color: black;">About the app</div>
                 <script>
@@ -141,36 +142,35 @@
                         
                     }
                 </script>
-                <div class="text_sekcia tmava_tema_text" id="info_text_dari">Naturae Slovakia is an iOS App with Augmented Reality experience. With this app, you can experience and learn more about Slovakia and it's cultural regions with an interactive map.<br><br>After launching the app, you scan the surface where you want to present the scene, and there you'll see the map of Slovakia. There you can observe and scale different regions of Slovakia. In each of the regions you can observe and read information about some interesting places, which are either cities, rivers, natural parks, or historical buildings. You can also change the surface of the map from satelite to vector texture.</div>
+                <div class="text_sekcia tmava_tema_text" id="info_text_dari">History-Pexeso is a cross-platform educational history game. In the game, you can play either against the computer, or against other players.<br>The aim of the game is to learn important historical events through the pexeso game. Pexeso is a simple game with card couples, where one card contains a historical event, and other card contains year when that event happened.<br>In the game, you can choose to play against the computer, where you choose the difficulty of the game, or against other players.</div>
                 <script>
-                    var iText1 = "Naturae Slovakia is an iOS App with Augmented Reality experience. With this app, you can experience and learn more about Slovakia and it's cultural regions with an interactive map.<br><br>After launching the app, you scan the surface where you want to present the scene, and there you'll see the map of Slovakia. There you can observe and scale different regions of Slovakia. In each of the regions you can observe and read information about some interesting places, which are either cities, rivers, natural parks, or historical buildings. You can also change the surface of the map from satelite to vector texture.";
-                    var iText2 = "Naturae Slovakia is an iOS App with Augmented Reality experience. With this app, you can experience and learn more about Slovakia and it's cultural regions with an interactive map.<br><br>After launching the app, you scan the surface where you want to present the scene, and there you'll see the map of Slovakia. There you can observe and scale different regions of Slovakia. In each of the regions you can observe and read information about some interesting places, which are either cities, rivers, natural parks, or historical buildings. You can also change the surface of the map from satelite to vector texture.<br>This app was part of the Bachelor thesis for which I developed it. Since it works only with AR framework, it can work only on iPhones and iPads.<br><br>This app is not available on the App store";
+                    var iText1 = "History-Pexeso is a cross-platform educational history game. In the game, you can play either against the computer, or against other players.<br>The aim of the game is to learn important historical events through the pexeso game. Pexeso is a simple game with card couples, where one card contains a historical event, and other card contains year when that event happened.<br>In the game, you can choose to play against the computer, where you choose the difficulty of the game, or against other players.";
+                    var iText2 = "History-Pexeso is a cross-platform educational history game. In the game, you can play either against the computer, or against other players.<br>The aim of the game is to learn important historical events through the pexeso game. Pexeso is a simple game with card couples, where one card contains a historical event, and other card contains year when that event happened.<br>In the game, you can choose to play against the computer, where you choose the difficulty of the game, or against other players.<br>You can choose between 3 sizes of the deck for the game. You can also choose how many cards from which historical era you want to use.<br> You can create game for 2 to 4 players.<br>Multiplayer can be played only on one computer, option for online multiplayer was not implemented.";
                 </script>
                 <button type="button" class="button_sekcia tmava_tema_button" id="prvyButton" onclick="readMore(2)">Read more</button>
             </div>
             <div class="prava_strana_parag_img">
-                <img src="imgs/nat/screen_naturae.png" alt="preview" class="apka_preview" style="right: -32%;height: 80vh;">
+                <img src="imgs/his/hist.png" alt="preview" class="apka_preview" style="height: 40vh;top: 160px;right: 0; position: relative;">
             </div>
         </div>
         <!--    Tretie cast - Education & Experience  -->
-        <div id="apka_info_bar" class="nat_color1">
+        <div id="apka_info_bar" class="his_color3">
             <div class="prava_strana_parag_text">
-                <div class="nazov_sekcia">Development</div>
-                <div class="text_sekcia tmava_tema_text" id="dev_text_dari">The development of the app took roughly 2 months. We used Swift as a programming language and Xcode as a development software. We used ARKit and SceneKit as a frameworks for the use of augmented relity. Since we were implementing these frameworks, we had to use iPhone and iPad devices, in order to test the AR experience in real life.<br><br>3D objects, like regions and castles, were designed and created in 3D Graphic software Blender. We used UV mapping for our textures, to get the correct rendering.</div>
+                <div class="nazov_sekcia" style="color: white;">Development</div>
+                <div class="text_sekcia svetla_tema_text" id="dev_text_dari">There are 3 people who participated in the development of this game. Martin Kubovčík, Peter Herbanský and Juraj Kebis.<br>The development of this game was part of the university course, and was scheduled to be finished in a 5 months period, during which we had to design and implement the game.<br><br>Throughout the first two months of designing and prototyping, we distributed the responsibilities and roles between ourselves.</div>
                 <button type="button" class="button_sekcia svetla_tema_button" id="druhyButton" onclick="readMore(4)">Read more</button>
                 <script>
-                    var dText1 = "The development of the app took roughly 2 months. We used Swift as a programming language and Xcode as a development software. We used ARKit and SceneKit as a frameworks for the use of augmented relity. Since we were implementing these frameworks, we had to use iPhone and iPad devices, in order to test the AR experience in real life.<br><br>3D objects, like regions and castles, were designed and created in 3D Graphic software Blender. We used UV mapping for our textures, to get the correct rendering.";
-                    
-                    var dText2 = "The development of the app took roughly 2 months. We used Swift as a programming language and Xcode as a development software. We used ARKit and SceneKit as a frameworks for the use of augmented relity. Since we were implementing these frameworks, we had to use iPhone and iPad devices, in order to test the AR experience in real life.<br><br>3D objects, like regions and castles, were designed and created in 3D Graphic software Blender. We used UV mapping for our textures, to get the correct rendering.<br>After exporting these objects, we imported them into Xcode, where we mapped them correctly to the scene.<br><br>Textures and other graphical elements were created using Adobe Photoshop.";
+                    var dText1 = "There are 3 people who participated in the development of this game. Martin Kubovčík, Peter Herbanský and Juraj Kebis.<br>The development of this game was part of the university course, and was scheduled to be finished in a 5 months period, during which we had to design and implement the game.<br><br>Throughout the first two months of designing and prototyping, we distributed the responsibilities and roles between ourselves.";
+                    var dText2 = "There are 3 people who participated in the development of this game. Martin Kubovčík, Peter Herbanský and Juraj Kebis.<br>The development of this game was part of the university course, and was scheduled to be finished in a 5 months period, during which we had to design and implement the game.<br><br>Throughout the first two months of designing and prototyping, we distributed the responsibilities and roles between ourselves. For the rest of the project development, we had these roles: Martin Kubovčík - Backend programmer, Peter Herbanský - Card collection designer, Juraj Kebis - Graphic designer along with the role of Scrum master of the team. Since Martin had role of Backend programmer, Juraj Kebis additionally took the position of Frontend programmer.<br><br>Implementation of the game was done in Unity, where we programmed the code with a C# language, and we also made all animations and transitions in Unity software. Graphic elements were created and designed in Adobe Photoshop.";
                 </script>
             </div>
             <div class="lava_strana_parag_img">
                 <div id="imageContainer">
-                    <img src="imgs/nat/dev1.png" alt="development" class="apka_develop" id="first_dev_img" onclick="viewPreviewApp(2);">
-                    <img src="imgs/nat/dev2.png" alt="development" class="apka_develop" id="second_dev_img" onclick="viewPreviewApp(3);">
-                    <img src="imgs/nat/dev3.png" alt="development" class="apka_develop" id="third_dev_img" style="box-shadow: 0px 4px 14px 4px rgba(0,0,0,0.3);" onclick="viewPreviewApp(4);">
+                    <img src="imgs/his/his_dev1.png" alt="development" class="apka_develop" id="first_dev_img" onclick="viewPreviewApp(2);" style="border: 1px solid white;">
+                    <img src="imgs/his/his_dev2.png" alt="development" class="apka_develop" id="second_dev_img" onclick="viewPreviewApp(3);" style="border: 1px solid white;">
+                    <img src="imgs/his/his_dev3.png" alt="development" class="apka_develop" id="third_dev_img" style="border: 1px solid white;"onclick="viewPreviewApp(4);">
                 </div>
-                <div id="infoImageDev">Mapping of objects in the Xcode software</div>
+                <div id="infoImageDev" style="color: rgba(235,224,190,1);">Graphic elements were created in Photoshop</div>
                 <button type="button" class="button_dif_view" id="prvy_but" onclick='switchImage(1)'></button>
                 <button type="button" class="button_dif_view" id="druhy_but" value="druhy_but" onclick='switchImage(2)'></button>
                 <button type="button" class="button_dif_view" id="treti_but" value="treti_but" onclick='switchImage(3)'></button>
@@ -196,7 +196,7 @@
                             x.style.transition = "all 1s";
                             y.style.transition = "all 1s";
                             w.style.transition = "all 1s";
-                            infoIm.innerHTML = "Mapping of objects in the Xcode software";
+                            infoIm.innerHTML = "Graphic elements were created in Photoshop";
                         } else if (r===2) {
                             var x = document.getElementById("first_dev_img");
                             var y = document.getElementById("second_dev_img");
@@ -217,7 +217,7 @@
                             x.style.transition = "all 1s";
                             y.style.transition = "all 1s";
                             w.style.transition = "all 1s";
-                            infoIm.innerHTML = "Storyboard used for navigation between windows - in Xcode";
+                            infoIm.innerHTML = "Game was implemented using Unity";
                         } else {
                             var x = document.getElementById("first_dev_img");
                             var y = document.getElementById("second_dev_img");
@@ -238,7 +238,7 @@
                             x.style.transition = "all 1s";
                             y.style.transition = "all 1s";
                             w.style.transition = "all 1s";
-                            infoIm.innerHTML = "Function for showing the detailed region";
+                            infoIm.innerHTML = "All animations were done in Unity";
                         }
                     }
                     function readMore(a) {
@@ -260,12 +260,12 @@
                             var y = document.getElementById("apka_info_bar");
                             var temp = document.getElementById("dev_text_dari");
                             var drBut = document.getElementById("druhyButton");
-                            if (y.style.height === "130vh") {
+                            if (y.style.height === "150vh") {
                                 y.style.height = "100vh";
                                 temp.innerHTML = dText1;
                                 drBut.innerHTML = "Read more";
                             } else {
-                                y.style.height = "130vh";
+                                y.style.height = "150vh";
                                 temp.innerHTML = dText2;
                                 drBut.innerHTML = "Show less";
                             }
@@ -281,13 +281,13 @@
             
         </div>
         <!--    Stvrta cast - about me   -->
-        <div id="apka_preview_bar" class="nat_color2">
+        <div id="apka_preview_bar" class="his_color1">
             <div class="lava_strana_parag_text">
-                <div class="nazov_sekcia" style="color: black;">Future plans</div>
-                <div class="text_sekcia tmava_tema_text" id="info_text_dari">The App is functioning and development is finished, however, it is not near the public release.<br>There are still some elements which could be improved and designed better. One of them is the map of Slovakia, the texture is not as easy to read as it could be. Redesign would be optimal, and there could be also more interesting points added in the regions.</div>
+                <div class="nazov_sekcia" style="color: white;">Post development?</div>
+                <div class="text_sekcia svetla_tema_text" id="info_text_dari">There are no plans to continue the development of the game. Since this was a course project, it was planned to end the development with the end of the course. However, there were talks on continuing the development and improving this game with adding more elements and options to play. But this is not likely to happen.</div>
             </div>
             <div class="prava_strana_parag_img">
-                <img src="imgs/nat/future_nat.png" alt="preview" class="apka_preview">
+                <img src="imgs/his/future_his.png" alt="preview" class="apka_preview" style="max-height: 50vh;position: relative;top: 140px;left: 70px;">
             </div>
         </div>
         
@@ -299,7 +299,7 @@
         </div>
         <!--    Spodok  -->
         <footer>
-            <div id="spodok">© 2022 kebis.space | All Rights Reserved |  <a href="privacy.php">Privacy Policy</a>
+            <div id="spodok">© 2022 kebis.space | All Rights Reserved |  <a href="privacy.html">Privacy Policy</a>
             </div>
         </footer>
     </body>
