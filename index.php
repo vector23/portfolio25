@@ -2,7 +2,7 @@
 <html>
     <head>
         <title>PORTFOLIO | Juraj Kebis</title>
-        <link rel="stylesheet" href="main.css?v=<?php echo time(); ?>" type="text/css"> 
+        <link rel="stylesheet" href="main.css" type="text/css"> 
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -60,21 +60,21 @@
         <!--    Hlavicka    -->
         <header>
             <div id="topBar">
-                <a href="index.php"><div class="menuT">About me
+                <a href="index.html"><div class="menuT">About me
                     </div></a>
                 <div class="menuT" id="hoverProjects">Projects
                     </div>
                 <!--Pod menu bar-->
                 <div id="podMenu">
-                        <a href="dari.php"><div class="podMT" id="dariCo">Dari Beary
+                        <a href="dari.html"><div class="podMT" id="dariCo">Dari Beary
                             </div></a>
-                        <a href="fpv.php"><div class="podMT" id="fpvCo">FPV App
+                        <a href="fpv.html"><div class="podMT" id="fpvCo">FPV App
                         </div></a>
-                        <a href="history.php"><div class="podMT" id="histCo">HISTORY PEXESO
+                        <a href="history.html"><div class="podMT" id="histCo">HISTORY PEXESO
                         </div></a>
-                        <a href="naturae.php"><div class="podMT" id="natuCo">Naturae Slovakia
+                        <a href="naturae.html"><div class="podMT" id="natuCo">Naturae Slovakia
                         </div></a>
-                        <a href="tower.php">
+                        <a href="tower.html">
                         <div class="podMT" id="secretCo">Secret Tower
                         </div></a>
                     <a href=""><div class="podMT">Research projects
@@ -82,7 +82,7 @@
                     </div>
                 <div class="menuT">Blogs
                     </div>
-                <a href="contact.php"><div class="menuT">Contact
+                <a href="contact.html"><div class="menuT">Contact
                     </div></a>
             </div>
             
@@ -188,7 +188,7 @@
                 <div class="popis2">UCM logo image, University image, and UU logo image from this urls:www.ucm.sk/sk/<br>www.coe.int/en/web/help/-/utrecht-university-launches-mooc-on-human-rights<br>en.wikipedia.org/wiki/Utrecht_University#/media/File:Utrecht_University_logo.svg</div>
                 <script>
                     var dText1 = "I graduated from <span style='color:black;'>Applied Informatics (HBO)</span> in 2021 at the <a href='https://www.ucm.sk' target='_blank' rel='noreferrer noopener' >University of Ss. Cyril and Methodius in Trnava</a>. During my studies, I've completed many courses related to my field, such as Software Engineering, Advanced Internet Technologies, Information Security, Fundamentals of law for IT students, Analysis and Computerization of Dynamic Systems, Algorithms and Data Structures, Computer Networks and others. I've continued to study <span style='color:black;'>Computing Science</span> at the <a href='https://www.uu.nl' target='_blank' rel='noreferrer noopener' >Utrecht University</a>, where I completed multiple advanced courses from Computer Science, such as Software Architecture, Logics for Safe AI, Algorithms for Decision Support and else.";
-                    var dText2 = "I graduated from <span style='color:black;'>Applied Informatics (HBO)</span> in 2021 at the <a href='https://www.ucm.sk' target='_blank' rel='noreferrer noopener' >University of Ss. Cyril and Methodius in Trnava</a>. During my studies, I've completed many courses related to my field, such as Software Engineering, Advanced Internet Technologies, Information Security, Fundamentals of law for IT students, Analysis and Computerization of Dynamic Systems, Algorithms and Data Structures, Computer Networks and others. I've continued to study <span style='color:black;'>Computing Science</span> at the <a href='https://www.uu.nl' target='_blank' rel='noreferrer noopener' >Utrecht University</a>, where I completed multiple advanced courses from Computer Science, such as Software Architecture, Logics for Safe AI, Algorithms for Decision Support and else.<br><br>My interest in Information Technology grew before I even started my high school studies at <a href='https://zochova.sk' target='_blank' rel='noreferrer noopener' >Zochova 9</a> <span style='color:black;'>Electrical Engineering school</span>.<br><br>During my university years, I've maximized my interest in gaining knowledge in app development, and I've attended many public lectures and meetings with senior developers in the field. I've completed multiple online courses, and at the end of my studies even received a <span style='color:black;'>Dean award</span> for an Excellent Project Thesis, which was an educational <a href='naturae.php'>AR iOS App</a>.";
+                    var dText2 = "I graduated from <span style='color:black;'>Applied Informatics (HBO)</span> in 2021 at the <a href='https://www.ucm.sk' target='_blank' rel='noreferrer noopener' >University of Ss. Cyril and Methodius in Trnava</a>. During my studies, I've completed many courses related to my field, such as Software Engineering, Advanced Internet Technologies, Information Security, Fundamentals of law for IT students, Analysis and Computerization of Dynamic Systems, Algorithms and Data Structures, Computer Networks and others. I've continued to study <span style='color:black;'>Computing Science</span> at the <a href='https://www.uu.nl' target='_blank' rel='noreferrer noopener' >Utrecht University</a>, where I completed multiple advanced courses from Computer Science, such as Software Architecture, Logics for Safe AI, Algorithms for Decision Support and else.<br><br>My interest in Information Technology grew before I even started my high school studies at <a href='https://zochova.sk' target='_blank' rel='noreferrer noopener' >Zochova 9</a> <span style='color:black;'>Electrical Engineering school</span>.<br><br>During my university years, I've maximized my interest in gaining knowledge in app development, and I've attended many public lectures and meetings with senior developers in the field. I've completed multiple online courses, and at the end of my studies even received a <span style='color:black;'>Dean award</span> for an Excellent Project Thesis, which was an educational <a href='naturae.html'>AR iOS App</a>.";
                 </script>
             </div>
             <div class="lava_strana_parag_img">
@@ -229,7 +229,7 @@
         </div>
         <!--    Spodok  -->
         <footer>
-            <div id="spodok">© 2022 kebis.space | All Rights Reserved |  <a href="privacy.php">Privacy Policy</a>
+            <div id="spodok">© 2022 kebis.space | All Rights Reserved |  <a href="privacy.html">Privacy Policy</a>
             </div>
         </footer>
     </body>
