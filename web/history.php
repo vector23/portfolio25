@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>PORTFOLIO | Juraj Kebis</title>
+        <link rel="stylesheet" href="main.css?v=<?php echo time(); ?>" type="text/css"> 
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+     
+    <body>
+        <!--    Hlavicka    -->
+        <header>
+            <div id="topBar">
+                <a href="index.php"><div class="menuT">About me
+                    </div></a>
+                <div class="menuT" id="hoverProjects">Projects
+                    </div>
+                <!--Pod menu bar-->
+                <div id="podMenu">
+                        <a href="dari.php"><div class="podMT" id="dariCo">Dari Beary
+                            </div></a>
+                        <a href="fpv.php"><div class="podMT" id="fpvCo">FPV App
+                        </div></a>
+                        <a href="history.php"><div class="podMT" id="histCo">HISTORY PEXESO
+                        </div></a>
+                        <a href="naturae.php"><div class="podMT" id="natuCo">Naturae Slovakia
+                        </div></a>
+                        <a href="tower.php">
+                        <div class="podMT" id="secretCo">Secret Tower
+                        </div></a>
+                    <a href=""><div class="podMT">Research projects
+                        </div></a>
+                    </div>
+                <div class="menuT">Blogs
+                    </div>
+                <a href="contact.php"><div class="menuT">Contact
+                    </div></a>
+            </div>
+            
+            
+        </header>
+
+        
+        <!--    Prva cast - welcome text  -->
+        <div class="apka_main_bar his_color1">
+            <img src="imgs/pattern3.png" id="pattern_bck" draggable="false" style="position: relative;">
+            <div id="nazov_apky">HISTORY-PEXESO</div>
+            <div id="popis_apky" style="color: white;opacity: 0.8;"><span style="font-family: semiFont;">Cross platform - Educational game</span><br>Dev. team:<span style="font-family: semiFont;">&nbsp HKK Team</span><br>Scrum + Graphic designer: <span style="font-family: semiFont;">&nbsp Juraj Kebis</span><br>Programmer: <span style="font-family: semiFont;">&nbsp Martin Kubovčík</span><br>Card designer: <span style="font-family: semiFont;">&nbsp Peter Herbanský</span><br>Status: <span style="font-family: semiFont;">&nbsp Finished - <a href="https://gportal.fpvucm.sk/Hry/hrat/history-pexeso" target="_blank" rel="noreferrer noopener" style="color: black;">web version</a></span><br><br>Project development duration: <span style="font-family: semiFont;">&nbsp 5 months</span><br>Start of the development: <span style="font-family: semiFont;">&nbsp September 2020</span></div>
+            
+                <img src="imgs/his/logo_Hist.png" alt="logo" class="apka_picture" style="border-radius: 50%; box-shadow: none;">
+            <!--VIDEO PLAYER -->
+            <script>
+                        window.document.onkeydown = function(e) {
+                        if (!e) {
+                            e = event;
+                        }
+                        if (e.keyCode == 27) {
+                            lightbox_close();
+                        }
+                        }
+
+                        function lightbox_open() {
+                        var lightBoxVideo = document.getElementById("videoPreview");
+                        window.scrollTo(0, 0);
+                        document.getElementById('light').style.display = 'block';
+                        document.getElementById('fade').style.display = 'block';
+                        lightBoxVideo.play();
+                        }
+
+                        function lightbox_close() {
+                        var lightBoxVideo = document.getElementById("videoPreview");
+                        document.getElementById('light').style.display = 'none';
+                        document.getElementById('fade').style.display = 'none';
+                        lightBoxVideo.pause();
+                        }
+                    </script>
+                    <div id="light">
+                        <a class="boxclose" id="boxclose" onclick="lightbox_close();"></a>
+                        <video id="videoPreview" style="height:90vh;width:auto;"controls>
+                            <source src="imgs/his/his_preview.mov" type="video/mp4">
+                            </video>
+                        </div>
+                        <div id="fade" onClick="lightbox_close();"></div>
+                        <div>
+                        <a href="#" onclick="lightbox_open();">Watch video</a>
+                        <button type="button" class="button_sekcia svetla_i_tema_button speci_button" onclick=lightbox_open()>Play the preview</button>
+                    </div>
+                    <!--/VIDEO PLAYER -->
+            
+            <button type="button" id="sekcia_sipka" onclick="scrollSmooth();"><img src="imgs/sipka.png" id="sipka"></button>
+            <script>
+                function scrollSmooth() {
+                    window.scrollTo({
+                      top: 650,
+                      behavior: 'smooth'
+                    });
+                }
+            </script>
+        </div>
+        <!--    Druha cast - about me   -->
+        <div id="apka_preview_bar" class="his_color2">
+            <div class="lava_strana_parag_text">
+                <div class="nazov_sekcia" style="color: black;">About the app</div>
+                <script>
+                    function viewPreviewApp(cis) {
+                        var temp=document.getElementById("gif_B");
+                        var temp1=document.getElementById("first_B");
+                        var temp2=document.getElementById("sec_B");
+                        var temp3=document.getElementById("third_B");
+                        
+                        if (cis === 0) {
+                            temp.style.opacity=0;
+                            temp1.style.opacity=0;
+                            temp2.style.opacity=0;
+                            temp3.style.opacity=0;
+                            temp.style.display="none";
+                            temp1.style.display="none";
+                            temp2.style.display="none";
+                            temp3.style.display="none";
+                        } else if (cis === 1) {
+                            temp.style.opacity=1;
+                            temp.style.display="flex";
+                        } else if (cis === 2) {
+                            temp1.style.opacity=1;
+                            temp1.style.display="flex";
+                        } else if (cis === 3) {
+                            temp2.style.opacity=1;
+                            temp2.style.display="flex";
+                        } else if (cis === 4) {
+                            temp3.style.opacity=1;
+                            temp3.style.display="flex";
+                        }
+                         var x = document.getElementById("black_scrn");
+                        if (x.style.display === "none") {
+                            x.style.display = "flex";
+                            x.style.opacity = 1;
+                        } else {
+                            x.style.display = "none";
+                            x.style.opacity = 0;
+                        }
+                        
+                    }
+                </script>
+                <div class="text_sekcia tmava_tema_text" id="info_text_dari">History-Pexeso is a cross-platform educational history game. In the game, you can play either against the computer, or against other players.<br>The aim of the game is to learn important historical events through the pexeso game. Pexeso is a simple game with card couples, where one card contains a historical event, and other card contains year when that event happened.<br>In the game, you can choose to play against the computer, where you choose the difficulty of the game, or against other players.</div>
+                <script>
+                    var iText1 = "History-Pexeso is a cross-platform educational history game. In the game, you can play either against the computer, or against other players.<br>The aim of the game is to learn important historical events through the pexeso game. Pexeso is a simple game with card couples, where one card contains a historical event, and other card contains year when that event happened.<br>In the game, you can choose to play against the computer, where you choose the difficulty of the game, or against other players.";
+                    var iText2 = "History-Pexeso is a cross-platform educational history game. In the game, you can play either against the computer, or against other players.<br>The aim of the game is to learn important historical events through the pexeso game. Pexeso is a simple game with card couples, where one card contains a historical event, and other card contains year when that event happened.<br>In the game, you can choose to play against the computer, where you choose the difficulty of the game, or against other players.<br>You can choose between 3 sizes of the deck for the game. You can also choose how many cards from which historical era you want to use.<br> You can create game for 2 to 4 players.<br>Multiplayer can be played only on one computer, option for online multiplayer was not implemented.";
+                </script>
+                <button type="button" class="button_sekcia tmava_tema_button" id="prvyButton" onclick="readMore(2)">Read more</button>
+            </div>
+            <div class="prava_strana_parag_img">
+                <img src="imgs/his/hist.png" alt="preview" class="apka_preview" style="height: 40vh;top: 160px;right: 0; position: relative;">
+            </div>
+        </div>
+        <!--    Tretie cast - Education & Experience  -->
+        <div id="apka_info_bar" class="his_color3">
+            <div class="prava_strana_parag_text">
+                <div class="nazov_sekcia" style="color: white;">Development</div>
+                <div class="text_sekcia svetla_tema_text" id="dev_text_dari">There are 3 people who participated in the development of this game. Martin Kubovčík, Peter Herbanský and Juraj Kebis.<br>The development of this game was part of the university course, and was scheduled to be finished in a 5 months period, during which we had to design and implement the game.<br><br>Throughout the first two months of designing and prototyping, we distributed the responsibilities and roles between ourselves.</div>
+                <button type="button" class="button_sekcia svetla_tema_button" id="druhyButton" onclick="readMore(4)">Read more</button>
+                <script>
+                    var dText1 = "There are 3 people who participated in the development of this game. Martin Kubovčík, Peter Herbanský and Juraj Kebis.<br>The development of this game was part of the university course, and was scheduled to be finished in a 5 months period, during which we had to design and implement the game.<br><br>Throughout the first two months of designing and prototyping, we distributed the responsibilities and roles between ourselves.";
+                    var dText2 = "There are 3 people who participated in the development of this game. Martin Kubovčík, Peter Herbanský and Juraj Kebis.<br>The development of this game was part of the university course, and was scheduled to be finished in a 5 months period, during which we had to design and implement the game.<br><br>Throughout the first two months of designing and prototyping, we distributed the responsibilities and roles between ourselves. For the rest of the project development, we had these roles: Martin Kubovčík - Backend programmer, Peter Herbanský - Card collection designer, Juraj Kebis - Graphic designer along with the role of Scrum master of the team. Since Martin had role of Backend programmer, Juraj Kebis additionally took the position of Frontend programmer.<br><br>Implementation of the game was done in Unity, where we programmed the code with a C# language, and we also made all animations and transitions in Unity software. Graphic elements were created and designed in Adobe Photoshop.";
+                </script>
+            </div>
+            <div class="lava_strana_parag_img">
+                <div id="imageContainer">
+                    <img src="imgs/his/his_dev1.png" alt="development" class="apka_develop" id="first_dev_img" onclick="viewPreviewApp(2);" style="border: 1px solid white;">
+                    <img src="imgs/his/his_dev2.png" alt="development" class="apka_develop" id="second_dev_img" onclick="viewPreviewApp(3);" style="border: 1px solid white;">
+                    <img src="imgs/his/his_dev3.png" alt="development" class="apka_develop" id="third_dev_img" style="border: 1px solid white;"onclick="viewPreviewApp(4);">
+                </div>
+                <div id="infoImageDev" style="color: rgba(235,224,190,1);">Graphic elements were created in Photoshop</div>
+                <button type="button" class="button_dif_view" id="prvy_but" onclick='switchImage(1)'></button>
+                <button type="button" class="button_dif_view" id="druhy_but" value="druhy_but" onclick='switchImage(2)'></button>
+                <button type="button" class="button_dif_view" id="treti_but" value="treti_but" onclick='switchImage(3)'></button>
+                <script>
+                    function switchImage(r) {
+                        if (r===1) {
+                            var x = document.getElementById("first_dev_img");
+                            var y = document.getElementById("second_dev_img");
+                            var w = document.getElementById("third_dev_img");
+                            var h = document.getElementById("prvy_but");
+                            var f = document.getElementById("druhy_but");
+                            var t = document.getElementById("treti_but");
+                            var infoIm = document.getElementById("infoImageDev");
+                            x.style.display="block";
+                            x.style.opacity=1;
+                            y.style.opacity=0;
+                            y.style.display="none";
+                            w.style.opacity=0;
+                            w.style.display="none";
+                            h.style.backgroundColor = "gray";
+                            f.style.backgroundColor = "lightgray";
+                            t.style.backgroundColor = "lightgray";
+                            x.style.transition = "all 1s";
+                            y.style.transition = "all 1s";
+                            w.style.transition = "all 1s";
+                            infoIm.innerHTML = "Graphic elements were created in Photoshop";
+                        } else if (r===2) {
+                            var x = document.getElementById("first_dev_img");
+                            var y = document.getElementById("second_dev_img");
+                            var w = document.getElementById("third_dev_img");
+                            var h = document.getElementById("prvy_but");
+                            var f = document.getElementById("druhy_but");
+                            var t = document.getElementById("treti_but");
+                            var infoIm = document.getElementById("infoImageDev");
+                            h.style.backgroundColor = "lightgray";
+                            f.style.backgroundColor = "gray";
+                            t.style.backgroundColor = "lightgray";
+                            x.style.opacity=0;
+                            x.style.display="none";
+                            y.style.display="block";
+                            y.style.opacity=1;
+                            w.style.opacity=0;
+                            w.style.display="none";
+                            x.style.transition = "all 1s";
+                            y.style.transition = "all 1s";
+                            w.style.transition = "all 1s";
+                            infoIm.innerHTML = "Game was implemented using Unity";
+                        } else {
+                            var x = document.getElementById("first_dev_img");
+                            var y = document.getElementById("second_dev_img");
+                            var w = document.getElementById("third_dev_img");
+                            var h = document.getElementById("prvy_but");
+                            var f = document.getElementById("druhy_but");
+                            var t = document.getElementById("treti_but");
+                            var infoIm = document.getElementById("infoImageDev");
+                            h.style.backgroundColor = "lightgray";
+                            f.style.backgroundColor = "lightgray";
+                            t.style.backgroundColor = "gray";
+                            x.style.opacity=0;
+                            x.style.display="none";
+                            y.style.opacity=0;
+                            y.style.display="none";
+                            w.style.display="block";
+                            w.style.opacity=1;
+                            x.style.transition = "all 1s";
+                            y.style.transition = "all 1s";
+                            w.style.transition = "all 1s";
+                            infoIm.innerHTML = "All animations were done in Unity";
+                        }
+                    }
+                    function readMore(a) {
+                        if (a<3) {
+                            var x = document.getElementById("apka_preview_bar");
+                            var temp = document.getElementById("info_text_dari");
+                            var prBut = document.getElementById("prvyButton");
+                            if (x.style.height === "130vh") {
+                                x.style.height = "100vh";
+                                temp.innerHTML = iText1;
+                                prBut.innerHTML = "Read more";
+                            } else {
+                                x.style.height = "130vh";
+                                temp.innerHTML = iText2;
+                                prBut.innerHTML = "Show less";
+                            }
+                            x.style.transition = "all 1s";
+                        } else {
+                            var y = document.getElementById("apka_info_bar");
+                            var temp = document.getElementById("dev_text_dari");
+                            var drBut = document.getElementById("druhyButton");
+                            if (y.style.height === "150vh") {
+                                y.style.height = "100vh";
+                                temp.innerHTML = dText1;
+                                drBut.innerHTML = "Read more";
+                            } else {
+                                y.style.height = "150vh";
+                                temp.innerHTML = dText2;
+                                drBut.innerHTML = "Show less";
+                            }
+                            /*
+                            for (let i = 0; i < z.length; i++) { 
+                              z[i].style.height = "500vh";
+                            }*/
+                            y.style.transition = "all 1s";
+                        }
+                    }
+                </script>
+            </div>
+            
+        </div>
+        <!--    Stvrta cast - about me   -->
+        <div id="apka_preview_bar" class="his_color1">
+            <div class="lava_strana_parag_text">
+                <div class="nazov_sekcia" style="color: white;">Post development?</div>
+                <div class="text_sekcia svetla_tema_text" id="info_text_dari">There are no plans to continue the development of the game. Since this was a course project, it was planned to end the development with the end of the course. However, there were talks on continuing the development and improving this game with adding more elements and options to play. But this is not likely to happen.</div>
+            </div>
+            <div class="prava_strana_parag_img">
+                <img src="imgs/his/future_his.png" alt="preview" class="apka_preview" style="max-height: 50vh;position: relative;top: 140px;left: 70px;">
+            </div>
+        </div>
+        
+        <!-- Info rights app -->
+        <div id="apka_dole">
+            <div class="center_text_parag">
+                <div class="tmava_tema_text" style="font-size: 18px;">All media on this webpage and domain belongs to the owner Juraj Kebis who is their creator.</div>
+            </div>
+        </div>
+        <!--    Spodok  -->
+        <footer>
+            <div id="spodok">© 2022 kebis.space | All Rights Reserved |  <a href="privacy.php">Privacy Policy</a>
+            </div>
+        </footer>
+    </body>
+</html>

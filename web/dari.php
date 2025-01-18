@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>PORTFOLIO | Juraj Kebis</title>
+        <link rel="stylesheet" href="main.css?v=<?php echo time(); ?>" type="text/css"> 
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+     
+    <body>
+        <!--    Hlavicka    -->
+        <header>
+            <div id="topBar">
+                <a href="index.php"><div class="menuT">About me
+                    </div></a>
+                <div class="menuT" id="hoverProjects">Projects
+                    </div>
+                <!--Pod menu bar-->
+                <div id="podMenu">
+                        <a href="dari.php"><div class="podMT" id="dariCo">Dari Beary
+                            </div></a>
+                        <a href="fpv.php"><div class="podMT" id="fpvCo">FPV App
+                        </div></a>
+                        <a href="history.php"><div class="podMT" id="histCo">HISTORY PEXESO
+                        </div></a>
+                        <a href="naturae.php"><div class="podMT" id="natuCo">Naturae Slovakia
+                        </div></a>
+                        <a href="tower.php">
+                        <div class="podMT" id="secretCo">Secret Tower
+                        </div></a>
+                    <a href=""><div class="podMT">Research projects
+                        </div></a>
+                    </div>
+                <div class="menuT">Blogs
+                    </div>
+                <a href="contact.php"><div class="menuT">Contact
+                    </div></a>
+            </div>
+            
+            
+        </header>
+        <!--    Cesta    
+        <div class="cesta">
+                <div class="kruh prvy_kruh"></div>
+                <div class="ciara prva_ciara"></div>
+                <div class="kruh druhy_kruh"></div>
+                <div class="ciara druha_ciara"></div>
+                <div class="kruh treti_kruh"></div>
+                <div class="ciara slaba tretia_ciara"></div>
+                <div class="kruh slaba stvrty_kruh"></div>
+        </div> -->
+
+        <!--    Prva cast - welcome text  -->
+        <div class="apka_main_bar dar_color1">
+            <img src="imgs/pattern3.png" id="pattern_bck" draggable="false" style="position: relative;">
+            <div id="nazov_apky">Dari Beary</div>
+            <div id="popis_apky"><span style="font-family: semiFont;">iOS Game - Cartoon card game</span><br>Developer: <span style="font-family: semiFont;">&nbsp Juraj Kebis</span><br>Status: <span style="font-family: semiFont;">&nbsp Finished - <a href="https://apps.apple.com/app/dari-beary/id1619078323?l" target="_blank" rel="noreferrer noopener">on the AppStore</a></span><br><br>Project development duration: <span style="font-family: semiFont;">&nbsp 2 months</span><br>Start of the development: <span style="font-family: semiFont;">&nbsp February 2022</span><br><span style="font-family: semiFont;">Source code - <a href="https://github.com/vector23" target="_blank" rel="noreferrer noopener">Github</a></span></div>
+            <a href="https://apps.apple.com/app/dari-beary/id1619078323?l" target="_blank" rel="noreferrer noopener">
+                <img src="imgs/dar/logo_Dari.png" alt="logo" class="apka_picture">
+                <img src="imgs/dwnApp2.png" alt="logo" id="downLogo"></a>
+                <img src="imgs/github-mark.png" alt="logo" id="gitLogo">
+                <!--VIDEO PLAYER -->
+                <script>
+                        window.document.onkeydown = function(e) {
+                        if (!e) {
+                            e = event;
+                        }
+                        if (e.keyCode == 27) {
+                            lightbox_close();
+                        }
+                        }
+
+                        function lightbox_open() {
+                        var lightBoxVideo = document.getElementById("videoPreview");
+                        window.scrollTo(0, 0);
+                        document.getElementById('light').style.display = 'block';
+                        document.getElementById('fade').style.display = 'block';
+                        lightBoxVideo.play();
+                        }
+
+                        function lightbox_close() {
+                        var lightBoxVideo = document.getElementById("videoPreview");
+                        document.getElementById('light').style.display = 'none';
+                        document.getElementById('fade').style.display = 'none';
+                        lightBoxVideo.pause();
+                        }
+                    </script>
+                    <div id="light">
+                        <a class="boxclose" id="boxclose" onclick="lightbox_close();"></a>
+                        <video id="videoPreview" style="height:90vh;width:auto;"controls>
+                            <source src="imgs/dar/dear_preview.mov" type="video/mp4">
+                            </video>
+                        </div>
+                        <div id="fade" onClick="lightbox_close();"></div>
+                        <div>
+                        <a href="#" onclick="lightbox_open();">Watch video</a>
+                        <button type="button" class="button_sekcia svetla_i_tema_button speci_button" onclick=lightbox_open()>Play the preview</button>
+                    </div>
+                    <!--/VIDEO PLAYER -->
+            
+            <button type="button" id="sekcia_sipka" onclick="scrollSmooth();"><img src="imgs/sipka.png" id="sipka"></button>
+            <script>
+                function scrollSmooth() {
+                    window.scrollTo({
+                      top: 650,
+                      behavior: 'smooth'
+                    });
+                }
+            </script>
+        </div>
+        <!--    Druha cast - about me   -->
+        <div id="apka_preview_bar" class="dari_color1">
+            <div class="lava_strana_parag_text">
+                <div class="nazov_sekcia">About the app</div>
+                <script>
+                    function viewPreviewApp(cis) {
+                        var temp=document.getElementById("gif_B");
+                        var temp1=document.getElementById("first_B");
+                        var temp2=document.getElementById("sec_B");
+                        var temp3=document.getElementById("third_B");
+                        
+                        if (cis === 0) {
+                            temp.style.opacity=0;
+                            temp1.style.opacity=0;
+                            temp2.style.opacity=0;
+                            temp3.style.opacity=0;
+                            temp.style.display="none";
+                            temp1.style.display="none";
+                            temp2.style.display="none";
+                            temp3.style.display="none";
+                        } else if (cis === 1) {
+                            temp.style.opacity=1;
+                            temp.style.display="flex";
+                        } else if (cis === 2) {
+                            temp1.style.opacity=1;
+                            temp1.style.display="flex";
+                        } else if (cis === 3) {
+                            temp2.style.opacity=1;
+                            temp2.style.display="flex";
+                        } else if (cis === 4) {
+                            temp3.style.opacity=1;
+                            temp3.style.display="flex";
+                        }
+                         var x = document.getElementById("black_scrn");
+                        if (x.style.display === "none") {
+                            x.style.display = "flex";
+                            x.style.opacity = 1;
+                        } else {
+                            x.style.display = "none";
+                            x.style.opacity = 0;
+                        }
+                        
+                    }
+                </script>
+                <div class="text_sekcia svetla_tema_text" id="info_text_dari">Dari Beary is a simple card game, developed for iOS devices which is played with the computer opponent. It is currently available for the download on iPhone devices with OS version higher then 11.<br><br>Game contains few scenes. One, for the main menu, which contains options to either Play the game, or to learn How to play the game. All scenes contain some graphic elements with animations, and sound effects with simple music in the background.</div>
+                <script>
+                    var iText1 = "Dari Beary is a simple card game, developed for iOS devices which is played with the computer opponent. It is currently available for the download on iPhone devices with OS version higher then 11.<br><br>Game contains few scenes. One, for the main menu, which contains options to either Play the game, or to learn How to play the game. All scenes contain some graphic elements with animations, and sound effects with simple music in the background.";
+                    var iText2 = "Dari Beary is a simple card game, developed for iOS devices which is played with the computer opponent. It is currently available for the download on iPhone devices with OS version higher then 11.<br><br>Game contains few scenes. One, for the main menu, which contains options to either Play the game, or to learn How to play the game. All scenes contain some graphic elements with animations, and sound effects with simple music in the background.<br><br>The game played with the opponent is a card game Faraon, which is a popular game played in central European countries. The game ends when one of the players got rid of all cards from their hand. If the player doesn't know how to play the game, they can learn it using how to play tutorial.";
+                </script>
+                <button type="button" class="button_sekcia svetla_tema_button" id="prvyButton" onclick="readMore(2)">Read more</button>
+            </div>
+            <div class="prava_strana_parag_img">
+                <img src="imgs/dar/screen_dari.png" alt="preview" class="apka_preview">
+            </div>
+        </div>
+        <!--    Tretie cast - Education & Experience  -->
+        <div id="apka_info_bar" class="dari_color2">
+            <div class="prava_strana_parag_text">
+                <div class="nazov_sekcia">Development</div>
+                <div class="text_sekcia tmava_tema_text" id="dev_text_dari">The development of the game took roughly 2 months. We used Swift as a programming language and Xcode as a development software. We also used SpriteKit framework for the 2D graphic animations and gameplay.<br>We went through different stages of development: planning, desig, implementation and finally testing of the app.<br>App has been released with multiple versions, the first one was released on 13.4 2022.<br>The most complex part of development was to implement gameplay, which was handeling changing turns between the players.</div>
+                <button type="button" class="button_sekcia tmava_tema_button" id="druhyButton" onclick="readMore(4)">Read more</button>
+                <script>
+                    var dText1 = "The development of the game took roughly 2 months. We used Swift as a programming language and Xcode as a development software. We also used SpriteKit framework for the 2D graphic animations and gameplay.<br>We went through different stages of development: planning, desig, implementation and finally testing of the app.<br>App has been released with multiple versions, the first one was released on 13.4 2022.<br>The most complex part of development was to implement gameplay, which was handeling changing turns between the players.";
+                    var dText2 = "The development of the game took roughly 2 months. We used Swift as a programming language and Xcode as a development software. We also used SpriteKit framework for the 2D graphic animations and gameplay.<br>We went through different stages of development: planning, desig, implementation and finally testing of the app.<br>App has been released with multiple versions, the first one was released on 13.4 2022.<br>The most complex part of development was to implement gameplay, which was handeling changing turns between the players. For the most optimal and simplest architecture we had to think about the whole logic of the card game, and about all scenarios that could occur, prior to the implementation.<br><br>Sketch and design of the app was made using Pixelmator software, along with all the graphical elements that we've used in the app.<br>Animations were done using SpriteKit.";
+                </script>
+            </div>
+            <div class="lava_strana_parag_img">
+                <div id="imageContainer">
+                    <img src="imgs/dar/dari_develop.png" alt="development" class="apka_develop" id="first_dev_img" onclick="viewPreviewApp(2);">
+                    <img src="imgs/dar/dari_pixel.png" alt="development" class="apka_develop" id="second_dev_img" onclick="viewPreviewApp(3);">
+                    <img src="imgs/dar/code_dari.png" alt="development" class="apka_develop" id="third_dev_img" style="box-shadow: 0px 4px 14px 4px rgba(0,0,0,0.3);" onclick="viewPreviewApp(4);">
+                </div>
+                <div id="infoImageDev">Xcode software with the program code</div>
+                <button type="button" class="button_dif_view" id="prvy_but" onclick='switchImage(1)'></button>
+                <button type="button" class="button_dif_view" id="druhy_but" value="druhy_but" onclick='switchImage(2)'></button>
+                <button type="button" class="button_dif_view" id="treti_but" value="treti_but" onclick='switchImage(3)'></button>
+                <script>
+                    function switchImage(r) {
+                        if (r===1) {
+                            var x = document.getElementById("first_dev_img");
+                            var y = document.getElementById("second_dev_img");
+                            var w = document.getElementById("third_dev_img");
+                            var h = document.getElementById("prvy_but");
+                            var f = document.getElementById("druhy_but");
+                            var t = document.getElementById("treti_but");
+                            var infoIm = document.getElementById("infoImageDev");
+                            x.style.display="block";
+                            x.style.opacity=1;
+                            y.style.opacity=0;
+                            y.style.display="none";
+                            w.style.opacity=0;
+                            w.style.display="none";
+                            h.style.backgroundColor = "gray";
+                            f.style.backgroundColor = "lightgray";
+                            t.style.backgroundColor = "lightgray";
+                            x.style.transition = "all 1s";
+                            y.style.transition = "all 1s";
+                            w.style.transition = "all 1s";
+                            infoIm.innerHTML = "Xcode software with the program code";
+                        } else if (r===2) {
+                            var x = document.getElementById("first_dev_img");
+                            var y = document.getElementById("second_dev_img");
+                            var w = document.getElementById("third_dev_img");
+                            var h = document.getElementById("prvy_but");
+                            var f = document.getElementById("druhy_but");
+                            var t = document.getElementById("treti_but");
+                            var infoIm = document.getElementById("infoImageDev");
+                            h.style.backgroundColor = "lightgray";
+                            f.style.backgroundColor = "gray";
+                            t.style.backgroundColor = "lightgray";
+                            x.style.opacity=0;
+                            x.style.display="none";
+                            y.style.display="block";
+                            y.style.opacity=1;
+                            w.style.opacity=0;
+                            w.style.display="none";
+                            x.style.transition = "all 1s";
+                            y.style.transition = "all 1s";
+                            w.style.transition = "all 1s";
+                            infoIm.innerHTML = "Graphic elements created in Pixelmator";
+                        } else {
+                            var x = document.getElementById("first_dev_img");
+                            var y = document.getElementById("second_dev_img");
+                            var w = document.getElementById("third_dev_img");
+                            var h = document.getElementById("prvy_but");
+                            var f = document.getElementById("druhy_but");
+                            var t = document.getElementById("treti_but");
+                            var infoIm = document.getElementById("infoImageDev");
+                            h.style.backgroundColor = "lightgray";
+                            f.style.backgroundColor = "lightgray";
+                            t.style.backgroundColor = "gray";
+                            x.style.opacity=0;
+                            x.style.display="none";
+                            y.style.opacity=0;
+                            y.style.display="none";
+                            w.style.display="block";
+                            w.style.opacity=1;
+                            x.style.transition = "all 1s";
+                            y.style.transition = "all 1s";
+                            w.style.transition = "all 1s";
+                            infoIm.innerHTML = "Example code of the algorithm for the pc player";
+                        }
+                    }
+                    function readMore(a) {
+                        if (a<3) {
+                            var x = document.getElementById("apka_preview_bar");
+                            var temp = document.getElementById("info_text_dari");
+                            var prBut = document.getElementById("prvyButton");
+                            if (x.style.height === "130vh") {
+                                x.style.height = "100vh";
+                                temp.innerHTML = iText1;
+                                prBut.innerHTML = "Read more";
+                            } else {
+                                x.style.height = "130vh";
+                                temp.innerHTML = iText2;
+                                prBut.innerHTML = "Show less";
+                            }
+                            x.style.transition = "all 1s";
+                        } else {
+                            var y = document.getElementById("apka_info_bar");
+                            var temp = document.getElementById("dev_text_dari");
+                            var drBut = document.getElementById("druhyButton");
+                            if (y.style.height === "140vh") {
+                                y.style.height = "100vh";
+                                temp.innerHTML = dText1;
+                                drBut.innerHTML = "Read more";
+                            } else {
+                                y.style.height = "140vh";
+                                temp.innerHTML = dText2;
+                                drBut.innerHTML = "Show less";
+                            }
+                            /*
+                            for (let i = 0; i < z.length; i++) { 
+                              z[i].style.height = "500vh";
+                            }*/
+                            y.style.transition = "all 1s";
+                        }
+                    }
+                </script>
+            </div>
+            
+        </div>
+        <!--    Stvrta cast - about me   -->
+        <div id="apka_preview_bar" class="dari_color1">
+            <div class="lava_strana_parag_text">
+                <div class="nazov_sekcia">Future plans</div>
+                <div class="text_sekcia svetla_tema_text" id="info_text_dari">Current version of the app has met it's goal. It is functioning and available for download from the AppStore.<br><br>But there is always room for improvements. One of the ways to improve, is the difficulty of the opponent. During the game, there is only one difficulty, and that is the easiest level. We want to make opponent as good, as the player gets with the game. For that, we designed difficulty levels, which are prepared in the code for the opponent moves (picture on the right).<br>Other then that, we plan to add more languages for the tutorial scene, and also add statistics panel with the info of the player for the end game screen.</div>
+            </div>
+            <div class="prava_strana_parag_img">
+                <img src="imgs/dar/future_dari.png" alt="preview" class="apka_preview">
+            </div>
+        </div>
+        
+        <!-- Info rights app -->
+        <div id="apka_dole">
+            <div class="center_text_parag">
+                <div class="tmava_tema_text" style="font-size: 18px;">All media on this webpage and domain belongs to the owner Juraj Kebis who is their creator.</div>
+            </div>
+        </div>
+        <!--    Spodok  -->
+        <footer>
+            <div id="spodok">© 2022 kebis.space | All Rights Reserved |  <a href="privacy.php">Privacy Policy</a>
+            </div>
+        </footer>
+    </body>
+</html>
